@@ -12,11 +12,6 @@ interface NextComponent {
 export default function Layout({ children }: NextComponent) {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    // await engine.loadJSON("tsparticles", "../options/particles.json")
     await loadFull(engine);
   }, []);
   
@@ -29,14 +24,7 @@ export default function Layout({ children }: NextComponent) {
   
   return (
     <div className="h-screen text-white bg-white dark:bg-slate-800">
-      <Head>
-        <title>Mete Gultekin</title>
-        <meta
-          name="description"
-          content="Portfolio site made by Mete Gültekin"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      
 
       <Particles
         id="tsparticles"
