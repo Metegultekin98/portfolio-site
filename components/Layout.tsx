@@ -23,16 +23,17 @@ export default function Layout({ children }: NextComponent) {
   );
   
   return (
-    <div className="h-screen text-white bg-white dark:bg-slate-800">
-      
+    <div className="layout-container h-screen w-screen position-relative text-white">
 
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={particleOptions}
-      />
-
+      /> */}
+      <div className="synthwave position-absolute">
+        <div className="synthwave-effect w-100 h-100"></div>
+      </div>
       <main>{children}</main>
 
       <footer></footer>
