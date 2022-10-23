@@ -1,25 +1,25 @@
 // @ts-ignore: Already existing type
-import { ISourceOptions } from 'tsparticles';
+import { ISourceOptions } from "tsparticles";
 
-export const particleOptions:ISourceOptions = {
+export const particleOptions: ISourceOptions = {
   fpsLimit: 60,
   fullScreen: { enable: true },
   particles: {
     number: {
-      value: 50
+      value: 50,
     },
     shape: {
-      type: "circle"
+      type: "circle",
     },
     opacity: {
-      value: 0.5
+      value: 0.5,
     },
     size: {
       value: 400,
       random: {
         enable: true,
-        minimumValue: 200
-      }
+        minimumValue: 200,
+      },
     },
     move: {
       enable: true,
@@ -28,18 +28,18 @@ export const particleOptions:ISourceOptions = {
       outModes: {
         default: "out",
         top: "destroy",
-        bottom: "none"
-      }
-    }
+        bottom: "none",
+      },
+    },
   },
   interactivity: {
     detectsOn: "canvas",
     events: {
-      resize: true
-    }
+      resize: true,
+    },
   },
   style: {
-    filter: "blur(50px)"
+    filter: "blur(50px)",
   },
   detectRetina: true,
   themes: [
@@ -47,50 +47,50 @@ export const particleOptions:ISourceOptions = {
       name: "light",
       default: {
         value: true,
-        mode: "light"
+        mode: "light",
       },
       options: {
         background: {
-          color: "#f7f8ef"
+          color: "#f7f8ef",
         },
         particles: {
           color: {
-            value: ["#5bc0eb", "#fde74c", "#9bc53d", "#e55934", "#fa7921"]
-          }
-        }
-      }
+            value: ["#5bc0eb", "#fde74c", "#9bc53d", "#e55934", "#fa7921"],
+          },
+        },
+      },
     },
     {
       name: "dark",
       default: {
         value: true,
-        mode: "dark"
+        mode: "dark",
       },
       options: {
         background: {
-          color: "#080710"
+          color: "#080710",
         },
         particles: {
           color: {
-            value: ["#004f74", "#5f5800", "#245100", "#7d0000", "#810c00"]
-          }
-        }
-      }
-    }
+            value: ["#004f74", "#5f5800", "#245100", "#7d0000", "#810c00"],
+          },
+        },
+      },
+    },
   ],
   emitters: {
     direction: "top",
     position: {
       x: 50,
-      y: 150
+      y: 150,
     },
     rate: {
       delay: 0.2,
-      quantity: 2
+      quantity: 2,
     },
     size: {
       width: 100,
-      height: 0
-    }
-  }
-}
+      height: 0,
+    },
+  },
+};

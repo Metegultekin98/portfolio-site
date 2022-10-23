@@ -1,0 +1,96 @@
+.landingPage {
+  font-family: "Joystix";
+}
+
+.landingTextOne {
+  border-right: 10px solid rgba(255, 255, 255, 0.75);
+  animation: typewriter1 2s steps(24) 1s 1 normal both;
+}
+
+.landingTextTwo {
+  border-right: 10px solid rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  animation: typewriter2 2s steps(24) 3s 1 normal both,
+    textBlink 0.5s step-end infinite alternate;
+}
+
+@keyframes typewriter1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typewriter2 {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes textBlink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.neonSign {
+  font-family: 'Nunito', sans-serif;
+  color: #1f0e28;
+}
+
+.neonBtn {
+  opacity: 0;
+  transform: translateY(-3rem);
+  border: 3px solid rgba(22, 182, 212, 0.3);
+  animation: neon 2s ease 6s 1 normal forwards, appear 1s ease 5s 1 normal forwards;
+}
+
+@keyframes neon {
+  0%,
+  18%,
+  20% {
+    color: #1f0e28;
+    text-shadow: none;
+    box-shadow: none;
+    border: 3px solid rgba(22, 182, 212, 0.3);
+  }
+
+  18.1%,
+  20.1%,
+  100% {
+    border: 3px solid rgba(22, 182, 212, 1);
+    color: #ffc2fd;
+    text-shadow: 0 0 10px #f205ae, 0 0 20px #f205ae, 0 0 40px #f205ae,
+      0 0 80px #f205ae, 0 0 160px #f205ae, 0 0 320px #f205ae, 0 0 640px #f205ae;
+    box-shadow: inset 0 0 10px rgba(113, 213, 255, 0.5),
+      inset 0 0 20px rgba(113, 213, 255, 0.5), 0 0 10px rgba(113, 213, 255, 0.3),
+      0 0 20px rgba(113, 213, 255, 0.3), 0 0 40px rgba(113, 213, 255, 0.3),
+      0 0 80px rgba(113, 213, 255, 0.3), 0 0 160px rgba(113, 213, 255, 0.3),
+      0 0 320px rgba(113, 213, 255, 0.3);
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  20%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
