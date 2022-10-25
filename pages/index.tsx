@@ -13,14 +13,14 @@ const Landing: NextPageWithLayout = () => {
         <p
           className={`${styles.landingTextOne} overflow-hidden whitespace-nowrap m-auto`}
         >
-          One Developer
+          A Developer That
         </p>
       </div>
       <div className="ml-20">
         <p
           className={`${styles.landingTextTwo} overflow-hidden whitespace-nowrap m-auto`}
         >
-          For Every Need
+          Gets The Job Done
         </p>
       </div>
       <div
